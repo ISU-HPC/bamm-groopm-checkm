@@ -5,7 +5,7 @@ from:continuumio/miniconda
 MAINTAINER Yasasvy Nanyam ynanyam@iastate.edu
 
 %post
-apt install -y gcc
+apt install -y gcc libgl1-mesa-glx
 export PATH=/opt/conda/bin:$PATH
 conda config --add channels conda-forge
 conda config --add channels bioconda
