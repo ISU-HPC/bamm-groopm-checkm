@@ -1,2 +1,2 @@
 # bamm-groopm-checkm
-Singualrity recipe for BamM, GroopM and CheckM on Conda
+Singualrity recipe for BamM, GroopM, CheckM and RefineM on Conda
