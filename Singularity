@@ -17,6 +17,7 @@ conda install functools_lru_cache
 echo 'export PATH=/usr/local/bin:/opt/conda/bin:$PATH' >>$SINGULARITY_ENVIRONMENT
 rm -rf /var/lib/apt/lists/*
 # INSTALL PRODIGAL
+apt install make
 cd /opt
 git clone https://github.com/hyattpd/Prodigal.git
 cd Prodigal
