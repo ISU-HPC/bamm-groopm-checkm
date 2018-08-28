@@ -5,7 +5,7 @@ from:continuumio/miniconda
 MAINTAINER Yasasvy Nanyam ynanyam@iastate.edu
 
 %post
-apt update
+apt update -y
 apt install gcc libgl1-mesa-glx
 export PATH=/opt/conda/bin:$PATH
 conda config --add channels conda-forge
