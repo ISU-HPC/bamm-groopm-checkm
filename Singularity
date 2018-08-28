@@ -5,7 +5,8 @@ from:continuumio/miniconda
 MAINTAINER Yasasvy Nanyam ynanyam@iastate.edu
 
 %post
-apt install -y gcc libgl1-mesa-glx
+apt-get update
+apt-get install -y gcc libgl1-mesa-glx
 export PATH=/opt/conda/bin:$PATH
 conda config --add channels conda-forge
 conda config --add channels bioconda
@@ -16,7 +17,8 @@ conda install checkm-genome
 conda install functools_lru_cache
 echo 'export PATH=/usr/local/bin:/opt/conda/bin:$PATH' >>$SINGULARITY_ENVIRONMENT
 # INSTALL PRODIGAL
-apt install -y build-essential
+apt-get update
+apt-get install -y build-essential
 cd /opt
 git clone https://github.com/hyattpd/Prodigal.git
 cd Prodigal
