@@ -31,8 +31,6 @@ apt install -y ncbi-blast+
 cd /opt
 wget http://github.com/bbuchfink/diamond/releases/download/v0.9.22/diamond-linux64.tar.gz
 tar xzf diamond-linux64.tar.gz
-cd diamond-linux64
-cp diamond /usr/local/bin
+mv diamond /usr/local/bin
 cd ..
-rm -rf diamond-linux64*
 rm -rf /var/lib/apt/lists/*
