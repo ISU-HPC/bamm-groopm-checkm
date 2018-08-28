@@ -5,7 +5,6 @@ from:continuumio/miniconda
 MAINTAINER Yasasvy Nanyam ynanyam@iastate.edu
 
 %post
-apt update
 apt install -y gcc libgl1-mesa-glx
 export PATH=/opt/conda/bin:$PATH
 conda config --add channels conda-forge
@@ -16,7 +15,6 @@ ln -s /opt/conda/lib/libhts.so /opt/conda/lib/libhts.so.1
 conda install checkm-genome
 conda install functools_lru_cache
 echo 'export PATH=/usr/local/bin:/opt/conda/bin:$PATH' >>$SINGULARITY_ENVIRONMENT
-rm -rf /var/lib/apt/lists/*
 # INSTALL PRODIGAL
 apt install -y build-essential
 cd /opt
@@ -35,3 +33,4 @@ cd diamond-linux64
 cp diamond /usr/local/bin
 cd ..
 rm -rf diamond-linux64*
+rm -rf /var/lib/apt/lists/*
