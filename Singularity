@@ -34,3 +34,9 @@ tar xzf diamond-linux64.tar.gz
 mv diamond /usr/local/bin
 cd ..
 rm -rf /var/lib/apt/lists/*
+# Install Krona
+cd /opt
+wget https://github.com/marbl/Krona/releases/download/v2.7/KronaTools-2.7.tar
+tar xvf KronaTools-2.7.tar
+cd Kronatools-2.7.tar
+./install.pl
